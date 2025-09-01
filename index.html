@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Weather | موسم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-app">
+        <header>
+            <h1>پاکستان موسم <span>Pak Weather</span></h1>
+            <div class="search-container">
+                <select id="city-select">
+                    <option value="karachi">Karachi کراچی</option>
+                    <option value="hyderabad">Hyderabad حیدرآباد</option>
+                    <option value="lahore">Lahore لاہور</option>
+                    <option value="islamabad">Islamabad اسلام آباد</option>
+                    <option value="peshawar">Peshawar پشاور</option>
+                    <option value="quetta">Quetta کوئٹہ</option>
+                    <option value="multan">Multan ملتان</option>
+                    <option value="faisalabad">Faisalabad فیصل آباد</option>
+                    <option value="gujranwala">Gujranwala گوجرانوالہ</option>
+                    <option value="sargodha">Sargodha سرگودھا</option>
+                    <option value="sialkot">Sialkot سیالکوٹ</option>
+                    <option value="bahawalpur">Bahawalpur بہاولپور</option>
+                </select>
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <div class="current-weather">
+                <div class="location-date">
+                    <h2 id="location">Karachi, PK <span>کراچی</span></h2>
+                    <p id="date">جمعہ، 31 مئی 2024 | Friday, May 31, 2024</p>
+                </div>
+                
+                <div class="weather-info">
+                    <div class="temperature">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png" alt="Sunny" id="weather-icon">
+                        <div>
+                            <span id="temp">38</span>
+                            <span class="unit">°C</span>
+                        </div>
+                    </div>
+                    
+                    <div class="details">
+                        <p id="condition">Sunny / دھوپ</p>
+                        <div class="extra-details">
+                            <div class="detail-item">
+                                <i class="fas fa-wind"></i>
+                                <span id="wind">18 km/h | ہوا</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tint"></i>
+                                <span id="humidity">65% | نمی</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-sun"></i>
+                                <span id="uv">8 (High) | UV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast">
+                <h3>اگلے 5 دن | Next 5 Days</h3>
+                <div class="forecast-items">
+                    <div class="forecast-item">
+                        <p class="day">Sat | ہفتہ</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png" alt="Sunny">
+                        <p class="temp">36°C</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p class="day">Sun | اتوار</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Partly Cloudy">
+                        <p class="temp">34°C</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p class="day">Mon | پیر</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Partly Cloudy">
+                        <p class="temp">33°C</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p class="day">Tue | منگل</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/4150/4150904.png" alt="Rain">
+                        <p class="temp">31°C</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p class="day">Wed | بدھ</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png" alt="Sunny">
+                        <p class="temp">35°C</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="paki-landmark">
+                <img src="https://images.unsplash.com/photo-1566647387313-9fda80664848?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Northern Areas Pakistan">
+                <p>Beautiful landscapes of Pakistan's northern mountains</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Data provided by Pakistan Meteorological Department</p>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
