@@ -26,4 +26,4 @@
 ## 🚀 Live Demo
 
 👉 [Click here to try the app](
-https://aniqakhan07.github.io/Weather-app/) 
+https://IBSpark.github.io/Weather-app/) 
